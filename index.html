@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CV Nama Kamu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Petra Andika</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Nama Kamu</h1>
-  <p>Email: kamu@email.com</p>
-  <p>Keahlian: Web Development, Data Analysis, dst...</p>
+  <header>
+    <h1>Petra Andika</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+        <li><a href="#" onclick="showSection('education')">Education</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="active">
+      <img src="foto-petra.jpg" alt="Petra Andika" class="profile-pic" />
+      <p>Semester 4 - Universitas Buddhi Dharma</p>
+      <p>Program Studi: Information System</p>
+    </section>
+
+    <section id="profile">
+      <h2>Personal Profile</h2>
+      <p>Saya adalah mahasiswa yang bersemangat dalam pengembangan web dan sistem informasi...</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>SMA XYZ</li>
+        <li>Universitas Buddhi Dharma, Sistem Informasi (2022 - sekarang)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: petra@example.com</p>
+      <p>LinkedIn: linkedin.com/in/petra</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
